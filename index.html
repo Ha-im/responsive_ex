@@ -135,5 +135,20 @@
 			<p>&copy; copyright 2021, My Portfolio Designs</p>
 		</div>
 	</footer>
+	<script>
+		const manuIcon = document.querySelector(".menu-icon")
+		const mainMenu = document.querySelector("nav .main-menu");
+
+		manuIcon.addEventListener("click",()=>{
+			mainMenu.classList.toggle("active");
+		});
+		/* 만약 active추가 제거가 아닌 display:none으로 진행이 됬다면 600 이상이 되었을땐 아예 사라짐 그를 방지하기 위한 자바스크립트 코드 
+		window.addEventListener("resize",()=>{
+			if(window.innerWidth > 600){
+				mainMenu.style.display = 'block';
+			}
+		});
+		*/
+	</script>
 </body>
 </html>
