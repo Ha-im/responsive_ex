@@ -1,0 +1,94 @@
+/* 반응형 */
+
+
+@media screen and (max-width:900px){
+  .container{
+      width: 100%;
+      padding-left:14px;
+      padding-right:14px;
+      box-sizing:border-box;
+  }
+  .porfolio-list{
+      gap:0;
+  }
+  .porfolio-list li{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  nav > div{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  nav{
+      position: relative;
+      height:auto;
+      padding:6px 0 0;
+  }
+  nav .container{
+      padding-left:0;
+      padding-right:0;
+  }
+  nav .main-menu{
+      flex-direction: column;
+      gap:0;
+      width: 100%;
+      padding-left:14px;
+      background:#333;
+      margin-top:6px;
+      height: 0;
+      overflow:hidden;
+      transition:0.5s;
+  }
+  nav .main-menu.active{
+      height:160px;
+  }
+  .menu-icon{
+      display:block;
+      margin-left:14px;
+  }
+  nav .social-menu{
+      position: absolute;
+      right:15px;
+      top:5px;
+  }
+  nav .main-menu li a{
+      display:block;
+      line-height: 40px;
+  }
+  
+  .feature .container{
+      flex-direction:column;
+      padding:0;
+      background:none;
+  }
+  .feature li{
+      height:120px;
+      border-right:none;
+      border-bottom: 1px solid #fff;
+      justify-content: start;
+      padding-left:14px;
+      background: url(../images/feature-bg.jpg) no-repeat;
+  }
+  .feature li a{
+      flex-direction: row;
+  }
+  .feature li:first-child{
+      border-left:none;
+  }
+  .feature li:nth-child(2){
+      background-position: center;
+  }
+  .feature li:last-child{
+      background-position: right bottom;
+      border:none;
+  }
+  .porfolio-list{
+      flex-direction: column;
+      gap:20px;
+  }
+  .footer-contents{
+      flex-direction: column;
+  }
+}
